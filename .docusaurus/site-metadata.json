@@ -1,6 +1,6 @@
 {
   "docusaurusVersion": "3.8.0",
-  "siteVersion": "0.0.0",
+  "siteVersion": "0.0.1",
   "pluginVersions": {
     "docusaurus-plugin-css-cascade-layers": {
       "type": "package",
@@ -22,9 +22,9 @@
       "name": "@docusaurus/plugin-content-pages",
       "version": "3.8.0"
     },
-    "docusaurus-plugin-debug": {
+    "docusaurus-plugin-sitemap": {
       "type": "package",
-      "name": "@docusaurus/plugin-debug",
+      "name": "@docusaurus/plugin-sitemap",
       "version": "3.8.0"
     },
     "docusaurus-plugin-svgr": {

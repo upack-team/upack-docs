@@ -5,6 +5,8 @@
 
 # *.husky
 node_modules
+build
+*.docusaurus*
 dist
 dist-ssr
 stats.html
@@ -19,6 +21,4 @@ yarn-error.log*
 lerna-debug.log*
 pnpm-lock.yaml
 pnpm-debug.log*
-
-# ! 需要 yarn.lock
-CHANGELOG.md 
+ 
