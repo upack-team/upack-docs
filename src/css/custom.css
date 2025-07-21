@@ -1,30 +1,282 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+
+/* @tailwind base; */
+/* @layer base {
+  svg {
+    @apply inline;
+  }
+
+  h1 {
+    @apply mt-4
+  }
+  
+} */
+/* @import url('./preflight.css');
+
+@tailwind components;
+@tailwind utilities; */
+
+/* ul {
+  list-style-type: disc;
+} */
+/* .markdown ::marker {
+  color: silver;
+} */
+
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: var(--ifm-container-width-xl);
+  }
+}
+
+aside.theme-doc-sidebar-container {
+  @apply border border-r  bg-gray-50
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+:root {
+  --ifm-navbar-background-color: #000;
+  --ifm-navbar-link-color: rgb(198,198,198);
+  --ifm-navbar-link-hover-color: #fff;
+  --ifm-navbar-shadow: none;
+  --ifm-footer-background-color: rgb(34,34,34);
+  --ifm-footer-color: rgb(153,153,153);
+  --ifm-footer-link-color: rgb(153,153,153);
+}
+
+.navbar-sidebar {
+  color: rgb(153,153,153);
+  --ifm-menu-color: rgb(198,198,198);
+  --ifm-menu-link-color: rgb(198,198,198);
+  --ifm-menu-link-hover-color: #fff; 
+}
+
+.navbar__items {
+  color: rgb(153,153,153);
+}
+
+.navbar__title {
+  color: #fff;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.markdown {
+  min-height: 600px;
+}
+
+/* 
+.admonition {
+  font-family: var(--tblr-font-sans-serif);
+  font-weight: 400;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 0;
+  -webkit-font-smoothing: antialiased;
+  --tblr-gutter-y: 0;
+  --tblr-gutter-x: 2rem;
+  word-wrap: break-word;
+  font-size: .875rem;
+  line-height: 1.4285714;
+  color: #232e3c;
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid rgba(101, 109, 119, .16);
+  box-shadow: rgba(35, 46, 60, .04) 0 2px 4px 0;
+  border-left: .25rem solid var(--tblr-alert-color);
+}
+.admonition-heading {
+  display: none;
+}
+
+.admonition-tip {
+  --tblr-alert-color: #2fb344;
+}
+
+.admonition-info {
+  --tblr-alert-color: #4299e1;
+}
+
+.screenshot-full {
+  border: 1px solid #dadde1;
+} */
+
+/* .docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+} */
+
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+/* .menu__list {
+  font-size: 0.9rem;
+}
+
+.menu__link--sublist:after {
+  padding-top: 0.3rem;
+  height: 0.6rem;
+  width: 0.75rem;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: #00bcd4;
+}
+
+.navbar__logo {
+  height: 25px;
+}
+
+.alert a {
+  color: inherit;
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu:hover {
+  overflow-y: auto;
+} */
+.navbar-social-link:hover {
+  opacity: 0.6;
+}
+
+.navbar-social-link::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-repeat: no-repeat;
+}
+/* .navbar-github-logo::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23181717' aria-hidden='true' viewBox='0 -2 28 28' version='1.1' data-view-component='true' %3E%3Cpath fill-rule='evenodd' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12' %3E%3C/path%3E%3C/svg%3E");
+} */
+
+.navbar-github-logo::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' aria-hidden='true' viewBox='0 -2 28 28' version='1.1' data-view-component='true' %3E%3Cpath fill-rule='evenodd' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12' %3E%3C/path%3E%3C/svg%3E");
+}
+/*
+.navbar-slack-logo::before {
+  background-image: url("https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg");
+  width: 20px;
+  height: 20px;
+}
+
+[data-theme='dark'] .navbar-slack-logo::before {
+  background-image: url("https://cdn.worldvectorlogo.com/logos/slack-new-logo.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-twitter-logo::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231DA1F2' viewBox='0 -3 28 28' aria-hidden='true'%3E%3Cpath d='M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z' %3E%3C/path%3E%3C/svg%3E");
+}
+
+[data-theme='dark'] .navbar-twitter-logo::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231DA1F2' viewBox='0 -3 28 28' aria-hidden='true'%3E%3Cpath d='M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z' %3E%3C/path%3E%3C/svg%3E");
+}
+
  */
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+/* sidebar theme from appsmith */
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link--sublist {
+  margin-bottom: 6px;
+  font-size: 0.938rem;
+  font-weight: 600;
+  line-height: 100%;
+  color: #000;
+  min-height: 40px;
+}
+/* 
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>button {
+  display: none;
+} */
+
+.navbar-sidebar .theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link--sublist {
+  color: #fff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.menu__list li:last-of-type {
+  -webkit-padding-after: 1.5rem;
+  padding-block-end: 0.5rem;
 }
+
+.menu__link {
+  align-items: center;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 16px;
+  transition: opacity 0.2s ease-out;
+}
+
+.theme-doc-sidebar-menu .menu__list-item .menu__caret:before,
+.theme-doc-sidebar-menu .menu__list-item .menu__link--sublist:after {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDEwIDggNmwtNCA0IiBzdHJva2U9IiMxQjI3MzgiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=) 50% no-repeat;
+  height: 1.5rem;
+  min-height: 29.5px;
+  min-width: 1.5rem;
+  width: 1.5rem;
+}
+
+.theme-doc-sidebar-item-category-level-1>.menu__list-item-collapsible>.menu__link--sublist.theme-doc-sidebar-menu .menu__list-item .menu__caret:before,
+.theme-doc-sidebar-menu .menu__list-item .menu__link--sublist:after {
+  background: none;
+  height: 1.5rem;
+  min-height: 29.5px;
+  min-width: 1.5rem;
+  width: 1.5rem;
+}
+
+
+.menu__caret {
+  padding: 0em 0.375em 0em 0.75em !important;
+}
+
+
+.menu__list {
+  display: block !important;
+  margin: 0;
+  transition: height 0.35s cubic-bezier(0.36, 0.66, 0.04, 1) 25ms !important;
+  will-change: auto !important;
+}
+

@@ -1,5 +1,4 @@
 {
-  "blogBasePath": "/Project-Instructions/blog",
-  "blogTitle": "Blog",
-  "authorsListPath": "/Project-Instructions/blog/authors"
+  "blogBasePath": "/blog",
+  "blogTitle": "Blog"
 }

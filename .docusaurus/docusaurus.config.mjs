@@ -4,244 +4,216 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
-  "favicon": "img/favicon.ico",
-  "future": {
-    "v4": {
-      "removeLegacyPostBuildHeadAttribute": true,
-      "useCssCascadeLayers": true
-    },
-    "experimental_faster": {
-      "swcJsLoader": false,
-      "swcJsMinimizer": false,
-      "swcHtmlMinimizer": false,
-      "lightningCssMinimizer": false,
-      "mdxCrossCompilerCache": false,
-      "rspackBundler": false,
-      "rspackPersistentCache": false,
-      "ssgWorkerThreads": false
-    },
-    "experimental_storage": {
-      "type": "localStorage",
-      "namespace": false
-    },
-    "experimental_router": "browser"
-  },
-  "url": "https://upack-team.github.io",
-  "baseUrl": "/Project-Instructions/",
-  "organizationName": "rttmoa",
-  "projectName": "Project-Instructions",
-  "onBrokenLinks": "throw",
+  "title": "Steedos Docs",
+  "tagline": "Open source alterative to Salesforce Platform.",
+  "favicon": "img/favicon.png",
+  "url": "https://docs.steedos.com",
+  "baseUrl": "/",
+  "organizationName": "steedos",
+  "projectName": "steedos.github.io",
+  "onBrokenLinks": "warn",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
-      "en"
+      "en",
+      "zh-CN"
     ],
     "path": "i18n",
     "localeConfigs": {}
   },
+  "scripts": [],
   "presets": [
     [
       "classic",
       {
         "docs": {
-          "sidebarPath": "./sidebars.ts",
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
-        },
-        "blog": {
-          "showReadingTime": true,
-          "feedOptions": {
-            "type": [
-              "rss",
-              "atom"
-            ],
-            "xslt": true
-          },
-          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          "onInlineTags": "warn",
-          "onInlineAuthors": "warn",
-          "onUntruncatedBlogPosts": "warn"
+          "sidebarPath": "E:\\Project\\Docusaurus\\sidebars.js",
+          "routeBasePath": "/",
+          "editUrl": "https://github.com/steedos/steedos-docs/tree/master/",
+          "editLocalizedFiles": true
         },
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": [
+            "E:\\Project\\Docusaurus\\src\\css\\custom.css"
+          ]
+        },
+        "gtag": {
+          "trackingID": "G-XVSWFLK780",
+          "anonymizeIP": true
         }
       }
     ]
   ],
+  "themes": [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      {
+        "hashed": true,
+        "language": [
+          "en",
+          "zh"
+        ],
+        "highlightSearchTermsOnTargetPage": true,
+        "explicitSearchResultPath": true,
+        "docsRouteBasePath": "/"
+      }
+    ],
+    "@docusaurus/theme-mermaid"
+  ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
+    "colorMode": {
+      "defaultMode": "light",
+      "disableSwitch": true,
+      "respectPrefersColorScheme": false
+    },
     "navbar": {
-      "title": "My Site",
+      "title": "Steedos",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/logo.svg"
+        "alt": "Steedos",
+        "src": "img/logo.png"
       },
       "items": [
         {
           "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
           "position": "left",
-          "label": "Tutorial"
+          "sidebarId": "platform",
+          "label": "Docs"
         },
         {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
+          "type": "docSidebar",
+          "position": "left",
+          "sidebarId": "developer",
+          "label": "Developer"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
-          "label": "GitHub",
+          "type": "docSidebar",
+          "position": "left",
+          "sidebarId": "solutions",
+          "label": "Solutions"
+        },
+        {
+          "type": "search",
           "position": "right"
+        },
+        {
+          "href": "https://docs.steedos.com",
+          "position": "right",
+          "html": "English"
+        },
+        {
+          "href": "https://docs.steedos.cn",
+          "position": "right",
+          "html": "中文"
+        },
+        {
+          "href": "https://github.com/steedos/steedos-platform",
+          "position": "right",
+          "className": "navbar-social-link navbar-github-logo",
+          "aria-label": "GitHub repository"
         }
       ],
       "hideOnScroll": false
     },
+    "docs": {
+      "sidebar": {
+        "hideable": false,
+        "autoCollapseCategories": false
+      },
+      "versionPersistence": "localStorage"
+    },
     "footer": {
-      "style": "dark",
-      "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
-        {
-          "title": "Community",
-          "items": [
-            {
-              "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              "label": "X",
-              "href": "https://x.com/docusaurus"
-            }
-          ]
-        },
-        {
-          "title": "More",
-          "items": [
-            {
-              "label": "Blog",
-              "to": "/blog"
-            },
-            {
-              "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
-            }
-          ]
-        }
-      ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "\n            Copyright © 2025 Steedos Inc.\n            ",
+      "style": "light",
+      "links": []
     },
     "prism": {
       "theme": {
         "plain": {
-          "color": "#393A34",
-          "backgroundColor": "#f6f8fa"
+          "color": "#F8F8F2",
+          "backgroundColor": "#282A36"
         },
         "styles": [
           {
             "types": [
-              "comment",
               "prolog",
-              "doctype",
-              "cdata"
+              "constant",
+              "builtin"
             ],
             "style": {
-              "color": "#999988",
-              "fontStyle": "italic"
+              "color": "rgb(189, 147, 249)"
             }
           },
           {
             "types": [
-              "namespace"
+              "inserted",
+              "function"
             ],
             "style": {
-              "opacity": 0.7
+              "color": "rgb(80, 250, 123)"
             }
           },
           {
             "types": [
-              "string",
-              "attr-value"
+              "deleted"
             ],
             "style": {
-              "color": "#e3116c"
+              "color": "rgb(255, 85, 85)"
+            }
+          },
+          {
+            "types": [
+              "changed"
+            ],
+            "style": {
+              "color": "rgb(255, 184, 108)"
             }
           },
           {
             "types": [
               "punctuation",
-              "operator"
+              "symbol"
             ],
             "style": {
-              "color": "#393A34"
+              "color": "rgb(248, 248, 242)"
             }
           },
           {
             "types": [
-              "entity",
-              "url",
-              "symbol",
-              "number",
-              "boolean",
-              "variable",
-              "constant",
-              "property",
-              "regex",
-              "inserted"
-            ],
-            "style": {
-              "color": "#36acaa"
-            }
-          },
-          {
-            "types": [
-              "atrule",
-              "keyword",
-              "attr-name",
+              "string",
+              "char",
+              "tag",
               "selector"
             ],
             "style": {
-              "color": "#00a4db"
+              "color": "rgb(255, 121, 198)"
             }
           },
           {
             "types": [
-              "function",
-              "deleted",
-              "tag"
+              "keyword",
+              "variable"
             ],
             "style": {
-              "color": "#d73a49"
+              "color": "rgb(189, 147, 249)",
+              "fontStyle": "italic"
             }
           },
           {
             "types": [
-              "function-variable"
+              "comment"
             ],
             "style": {
-              "color": "#6f42c1"
+              "color": "rgb(98, 114, 164)"
             }
           },
           {
             "types": [
-              "tag",
-              "selector",
-              "keyword"
+              "attr-name"
             ],
             "style": {
-              "color": "#00009f"
+              "color": "rgb(241, 250, 140)"
             }
           }
         ]
@@ -335,7 +307,11 @@ export default {
           }
         ]
       },
-      "additionalLanguages": [],
+      "additionalLanguages": [
+        "bash",
+        "json",
+        "yaml"
+      ],
       "magicComments": [
         {
           "className": "theme-code-block-highlighted-line",
@@ -347,29 +323,58 @@ export default {
         }
       ]
     },
-    "colorMode": {
-      "defaultMode": "light",
-      "disableSwitch": false,
-      "respectPrefersColorScheme": false
-    },
-    "docs": {
-      "versionPersistence": "localStorage",
-      "sidebar": {
-        "hideable": false,
-        "autoCollapseCategories": false
-      }
-    },
-    "blog": {
-      "sidebar": {
-        "groupByYear": true
-      }
-    },
     "metadata": [],
     "tableOfContents": {
       "minHeadingLevel": 2,
       "maxHeadingLevel": 3
+    },
+    "mermaid": {
+      "theme": {
+        "dark": "dark",
+        "light": "default"
+      },
+      "options": {}
     }
   },
+  "markdown": {
+    "mermaid": true,
+    "format": "mdx",
+    "mdx1Compat": {
+      "comments": true,
+      "admonitions": true,
+      "headingIds": true
+    }
+  },
+  "plugins": [
+    [
+      "@docusaurus/plugin-pwa",
+      {
+        "debug": true,
+        "offlineModeActivationStrategies": [
+          "appInstalled",
+          "standalone",
+          "queryString"
+        ],
+        "pwaHead": [
+          {
+            "tagName": "link",
+            "rel": "icon",
+            "href": "/img/logo.png"
+          },
+          {
+            "tagName": "link",
+            "rel": "manifest",
+            "href": "/manifest.json"
+          },
+          {
+            "tagName": "meta",
+            "name": "theme-color",
+            "content": "rgb(37, 194, 160)"
+          }
+        ]
+      }
+    ]
+  ],
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
@@ -377,24 +382,9 @@ export default {
     "static"
   ],
   "customFields": {},
-  "plugins": [],
-  "themes": [],
-  "scripts": [],
   "headTags": [],
   "stylesheets": [],
   "clientModules": [],
   "titleDelimiter": "|",
-  "noIndex": false,
-  "markdown": {
-    "format": "mdx",
-    "mermaid": false,
-    "mdx1Compat": {
-      "comments": true,
-      "admonitions": true,
-      "headingIds": true
-    },
-    "anchors": {
-      "maintainCase": false
-    }
-  }
+  "noIndex": false
 };

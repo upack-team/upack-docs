@@ -1,83 +1,1016 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/Project-Instructions/docs",
+      "path": "/",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/Project-Instructions/docs",
-          "mainDocId": "intro",
+          "path": "/",
+          "mainDocId": "getting-started/README",
           "docs": [
             {
-              "id": "intro",
-              "path": "/Project-Instructions/docs/intro",
-              "sidebar": "tutorialSidebar"
+              "id": "admin",
+              "path": "/admin"
             },
             {
-              "id": "tutorial-basics/congratulations",
-              "path": "/Project-Instructions/docs/tutorial-basics/congratulations",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/audit-logs",
+              "path": "/admin/organization/audit-logs",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-basics/create-a-blog-post",
-              "path": "/Project-Instructions/docs/tutorial-basics/create-a-blog-post",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/company-info",
+              "path": "/admin/organization/company-info",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-basics/create-a-document",
-              "path": "/Project-Instructions/docs/tutorial-basics/create-a-document",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/import",
+              "path": "/admin/organization/import",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-basics/create-a-page",
-              "path": "/Project-Instructions/docs/tutorial-basics/create-a-page",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/installed-packages",
+              "path": "/admin/organization/installed-packages",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-basics/deploy-your-site",
-              "path": "/Project-Instructions/docs/tutorial-basics/deploy-your-site",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/organizations",
+              "path": "/admin/organization/organizations",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-basics/markdown-features",
-              "path": "/Project-Instructions/docs/tutorial-basics/markdown-features",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/README",
+              "path": "/admin/organization/",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-extras/manage-docs-versions",
-              "path": "/Project-Instructions/docs/tutorial-extras/manage-docs-versions",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/users",
+              "path": "/admin/organization/users",
+              "sidebar": "platform"
             },
             {
-              "id": "tutorial-extras/translate-your-site",
-              "path": "/Project-Instructions/docs/tutorial-extras/translate-your-site",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/organization/white-label",
+              "path": "/admin/organization/white-label",
+              "sidebar": "platform"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/Project-Instructions/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/permissions/app-permissions",
+              "path": "/admin/permissions/app-permissions",
+              "sidebar": "platform"
             },
             {
-              "id": "/category/tutorial---extras",
-              "path": "/Project-Instructions/docs/category/tutorial---extras",
-              "sidebar": "tutorialSidebar"
+              "id": "admin/permissions/before-find",
+              "path": "/admin/permissions/before-find",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/division",
+              "path": "/admin/permissions/division",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/field-permissions",
+              "path": "/admin/permissions/field-permissions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/index",
+              "path": "/admin/permissions/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/object-permissions",
+              "path": "/admin/permissions/object-permissions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/overview",
+              "path": "/admin/permissions/overview",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/permission-set",
+              "path": "/admin/permissions/permission-set",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/profile",
+              "path": "/admin/permissions/profile",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/restriction-rules",
+              "path": "/admin/permissions/restriction-rules",
+              "sidebar": "platform"
+            },
+            {
+              "id": "admin/permissions/sharing-rules",
+              "path": "/admin/permissions/sharing-rules",
+              "sidebar": "platform"
+            },
+            {
+              "id": "apps/collaboration/approval-king/README",
+              "path": "/apps/collaboration/approval-king/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/collaboration/milestone/README",
+              "path": "/apps/collaboration/milestone/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/collaboration/README",
+              "path": "/apps/collaboration/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/customer-relationship-management/README",
+              "path": "/apps/customer-relationship-management/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/customer-relationship-management/sales/README",
+              "path": "/apps/customer-relationship-management/sales/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/customer-relationship-management/service/README",
+              "path": "/apps/customer-relationship-management/service/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/getting-started/overview",
+              "path": "/apps/getting-started/overview",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/human-capital-management/attendance/README",
+              "path": "/apps/human-capital-management/attendance/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/human-capital-management/employee/README",
+              "path": "/apps/human-capital-management/employee/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/human-capital-management/performance/README",
+              "path": "/apps/human-capital-management/performance/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/human-capital-management/README",
+              "path": "/apps/human-capital-management/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/contract/README",
+              "path": "/apps/spend-management/contract/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/expense/README",
+              "path": "/apps/spend-management/expense/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/invoice/README",
+              "path": "/apps/spend-management/invoice/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/project/README",
+              "path": "/apps/spend-management/project/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/README",
+              "path": "/apps/spend-management/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/supplier/README",
+              "path": "/apps/spend-management/supplier/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "apps/spend-management/tender/README",
+              "path": "/apps/spend-management/tender/",
+              "sidebar": "apps"
+            },
+            {
+              "id": "automation",
+              "path": "/automation",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/approval-king/admin-guide",
+              "path": "/automation/approval-king/admin-guide",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/approval-king/getting-started",
+              "path": "/automation/approval-king/getting-started",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/approval-king/index",
+              "path": "/automation/approval-king/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/approval-process",
+              "path": "/automation/approval-process",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/automated-actions",
+              "path": "/automation/automated-actions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "automation/workflow-rules",
+              "path": "/automation/workflow-rules",
+              "sidebar": "platform"
+            },
+            {
+              "id": "company/about-us",
+              "path": "/company/about-us"
+            },
+            {
+              "id": "company/contact-us",
+              "path": "/company/contact-us"
+            },
+            {
+              "id": "company/privacy",
+              "path": "/company/privacy"
+            },
+            {
+              "id": "customer-success-stories/cmbchina-poc",
+              "path": "/customer-success-stories/cmbchina-poc"
+            },
+            {
+              "id": "customer-success-stories/contract",
+              "path": "/customer-success-stories/contract"
+            },
+            {
+              "id": "customer-success-stories/COVID-19",
+              "path": "/customer-success-stories/COVID-19"
+            },
+            {
+              "id": "customer-success-stories/ctms",
+              "path": "/customer-success-stories/ctms"
+            },
+            {
+              "id": "customer-success-stories/dzug",
+              "path": "/customer-success-stories/dzug"
+            },
+            {
+              "id": "customer-success-stories/hbyt",
+              "path": "/customer-success-stories/hbyt"
+            },
+            {
+              "id": "customer-success-stories/jianhuabm",
+              "path": "/customer-success-stories/jianhuabm"
+            },
+            {
+              "id": "customer-success-stories/porthebei",
+              "path": "/customer-success-stories/porthebei"
+            },
+            {
+              "id": "customer-success-stories/README",
+              "path": "/customer-success-stories/"
+            },
+            {
+              "id": "customer-success-stories/scrm",
+              "path": "/customer-success-stories/scrm"
+            },
+            {
+              "id": "customer-success-stories/steedos-oem",
+              "path": "/customer-success-stories/steedos-oem"
+            },
+            {
+              "id": "customer-success-stories/tsinghua",
+              "path": "/customer-success-stories/tsinghua"
+            },
+            {
+              "id": "customer-success-stories/yz",
+              "path": "/customer-success-stories/yz"
+            },
+            {
+              "id": "customer-success-stories/zqy",
+              "path": "/customer-success-stories/zqy"
+            },
+            {
+              "id": "deploy",
+              "path": "/deploy",
+              "sidebar": "platform"
+            },
+            {
+              "id": "deploy/deploy-docker",
+              "path": "/deploy/deploy-docker",
+              "sidebar": "platform"
+            },
+            {
+              "id": "deploy/deploy-k8s",
+              "path": "/deploy/deploy-k8s",
+              "sidebar": "platform"
+            },
+            {
+              "id": "deploy/gitpod",
+              "path": "/deploy/gitpod",
+              "sidebar": "platform"
+            },
+            {
+              "id": "deploy/intranet",
+              "path": "/deploy/intranet",
+              "sidebar": "platform"
+            },
+            {
+              "id": "deploy/steedos-config",
+              "path": "/deploy/steedos-config",
+              "sidebar": "platform"
+            },
+            {
+              "id": "developer",
+              "path": "/developer",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/analytics-api",
+              "path": "/developer/api/analytics-api",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/api-process",
+              "path": "/developer/api/api-process",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/api-validate",
+              "path": "/developer/api/api-validate",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/graphql-api",
+              "path": "/developer/api/graphql-api",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/openapi",
+              "path": "/developer/api/openapi",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/overview",
+              "path": "/developer/api/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/api/README",
+              "path": "/developer/api/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/integration/api-jwt-sso",
+              "path": "/developer/integration/api-jwt-sso",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/integration/node-red",
+              "path": "/developer/integration/node-red",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/integration/README",
+              "path": "/developer/integration/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/base_config",
+              "path": "/developer/micro-page/amis/base_config",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/data",
+              "path": "/developer/micro-page/amis/data",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/data_mapping",
+              "path": "/developer/micro-page/amis/data_mapping",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/event",
+              "path": "/developer/micro-page/amis/event",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/expression",
+              "path": "/developer/micro-page/amis/expression",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/linkage",
+              "path": "/developer/micro-page/amis/linkage",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/README",
+              "path": "/developer/micro-page/amis/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/styles",
+              "path": "/developer/micro-page/amis/styles",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/amis/tpl",
+              "path": "/developer/micro-page/amis/tpl",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/object_form",
+              "path": "/developer/micro-page/components/object_form",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/object_listview",
+              "path": "/developer/micro-page/components/object_listview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/object_table",
+              "path": "/developer/micro-page/components/object_table",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/README",
+              "path": "/developer/micro-page/components/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/record_detail_header",
+              "path": "/developer/micro-page/components/record_detail_header",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/components/record_detail_related_list",
+              "path": "/developer/micro-page/components/record_detail_related_list",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/custom_components",
+              "path": "/developer/micro-page/custom_components",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/getting_start",
+              "path": "/developer/micro-page/getting_start",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/overview",
+              "path": "/developer/micro-page/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/micro-page/README",
+              "path": "/developer/micro-page/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/metadata/metadata-automation",
+              "path": "/developer/package/metadata/metadata-automation",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/metadata/metadata-object",
+              "path": "/developer/package/metadata/metadata-object",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/metadata/metadata-permissions",
+              "path": "/developer/package/metadata/metadata-permissions",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/metadata/metadata-ui",
+              "path": "/developer/package/metadata/metadata-ui",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/metadata/README",
+              "path": "/developer/package/metadata/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/overview",
+              "path": "/developer/package/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/package-install",
+              "path": "/developer/package/package-install",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/package-publish",
+              "path": "/developer/package/package-publish",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/README",
+              "path": "/developer/package/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/package/sync-metadata",
+              "path": "/developer/package/sync-metadata",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/plugins/objectql",
+              "path": "/developer/plugins/objectql",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/plugins/overview",
+              "path": "/developer/plugins/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/plugins/README",
+              "path": "/developer/plugins/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/plugins/trigger",
+              "path": "/developer/plugins/trigger",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/action-api",
+              "path": "/developer/service/action-api",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/action-trigger",
+              "path": "/developer/service/action-trigger",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/locale",
+              "path": "/developer/service/locale",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/moleculer/actions",
+              "path": "/developer/service/moleculer/actions",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/moleculer/events",
+              "path": "/developer/service/moleculer/events",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/moleculer/README",
+              "path": "/developer/service/moleculer/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/moleculer/repl",
+              "path": "/developer/service/moleculer/repl",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/objectql",
+              "path": "/developer/service/objectql",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/overview",
+              "path": "/developer/service/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/package-service",
+              "path": "/developer/service/package-service",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/README",
+              "path": "/developer/service/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/service-api/README",
+              "path": "/developer/service/service-api/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/service-api/service-graphql",
+              "path": "/developer/service/service-api/service-graphql",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/service-api/service-push",
+              "path": "/developer/service/service-api/service-push",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/service/service-api/service-sms",
+              "path": "/developer/service/service-api/service-sms",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/create-steedos-app",
+              "path": "/developer/setup/create-steedos-app",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/overview",
+              "path": "/developer/setup/overview",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/project-start",
+              "path": "/developer/setup/project-start",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/README",
+              "path": "/developer/setup/",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/sample-repository",
+              "path": "/developer/setup/sample-repository",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/setup-env",
+              "path": "/developer/setup/setup-env",
+              "sidebar": "developer"
+            },
+            {
+              "id": "developer/setup/steedos-cli",
+              "path": "/developer/setup/steedos-cli",
+              "sidebar": "developer"
+            },
+            {
+              "id": "getting-started/README",
+              "path": "/getting-started/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/README",
+              "path": "/getting-started/tutorials/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/the-basics/app",
+              "path": "/getting-started/tutorials/the-basics/app",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/the-basics/object",
+              "path": "/getting-started/tutorials/the-basics/object",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/the-basics/README",
+              "path": "/getting-started/tutorials/the-basics/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/the-basics/relationship",
+              "path": "/getting-started/tutorials/the-basics/relationship",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/tutorials/the-basics/workflow-rules",
+              "path": "/getting-started/tutorials/the-basics/workflow-rules",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/user/download-apps",
+              "path": "/getting-started/user/download-apps",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/user/overview",
+              "path": "/getting-started/user/overview",
+              "sidebar": "platform"
+            },
+            {
+              "id": "getting-started/user/README",
+              "path": "/getting-started/user/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code",
+              "path": "/no-code"
+            },
+            {
+              "id": "no-code/application/app",
+              "path": "/no-code/application/app",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/application/overview",
+              "path": "/no-code/application/overview",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/application/pages",
+              "path": "/no-code/application/pages",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/application/README",
+              "path": "/no-code/application/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/application/tab",
+              "path": "/no-code/application/tab",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/button",
+              "path": "/no-code/customize/button",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/external-datasources",
+              "path": "/no-code/customize/external-datasources",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/field-attributes",
+              "path": "/no-code/customize/fields/field-attributes",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/field-type-autonumber",
+              "path": "/no-code/customize/fields/field-type-autonumber",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/field-type-summary",
+              "path": "/no-code/customize/fields/field-type-summary",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/field-types",
+              "path": "/no-code/customize/fields/field-types",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/README",
+              "path": "/no-code/customize/fields/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/fields/relationship",
+              "path": "/no-code/customize/fields/relationship",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/cross-object",
+              "path": "/no-code/customize/formula/cross-object",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/datetime",
+              "path": "/no-code/customize/formula/datetime",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/formula-field",
+              "path": "/no-code/customize/formula/formula-field",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/functions",
+              "path": "/no-code/customize/formula/functions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/overview",
+              "path": "/no-code/customize/formula/overview",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/formula/README",
+              "path": "/no-code/customize/formula/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/listview",
+              "path": "/no-code/customize/listview",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/object",
+              "path": "/no-code/customize/object",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/object-functions",
+              "path": "/no-code/customize/object-functions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/object-relationship",
+              "path": "/no-code/customize/object-relationship",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/object-triggers",
+              "path": "/no-code/customize/object-triggers",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/page-layout",
+              "path": "/no-code/customize/page-layout",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/README",
+              "path": "/no-code/customize/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "no-code/customize/validation-rules",
+              "path": "/no-code/customize/validation-rules",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/architecture",
+              "path": "/platform/architecture",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/analytics",
+              "path": "/platform/features/analytics",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/app-builder",
+              "path": "/platform/features/app-builder",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/approval-workflow",
+              "path": "/platform/features/approval-workflow",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/automation",
+              "path": "/platform/features/automation",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/data-modeling",
+              "path": "/platform/features/data-modeling",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/form-builder",
+              "path": "/platform/features/form-builder",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/integration",
+              "path": "/platform/features/integration",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/page-builder",
+              "path": "/platform/features/page-builder",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/permission",
+              "path": "/platform/features/permission",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/features/README",
+              "path": "/platform/features/",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/lowcode",
+              "path": "/platform/lowcode",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/open-source-low-code",
+              "path": "/platform/open-source-low-code",
+              "sidebar": "platform"
+            },
+            {
+              "id": "platform/solutions",
+              "path": "/platform/solutions",
+              "sidebar": "platform"
+            },
+            {
+              "id": "plugins",
+              "path": "/plugins",
+              "sidebar": "platform"
+            },
+            {
+              "id": "plugins/integration-ding",
+              "path": "/plugins/integration-ding",
+              "sidebar": "platform"
+            },
+            {
+              "id": "plugins/integration-qywx",
+              "path": "/plugins/integration-qywx",
+              "sidebar": "platform"
+            },
+            {
+              "id": "solutions/assets",
+              "path": "/solutions/assets",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/contract",
+              "path": "/solutions/contract",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/expense",
+              "path": "/solutions/expense",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/files",
+              "path": "/solutions/files",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/overview",
+              "path": "/solutions/overview",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/pcmes",
+              "path": "/solutions/pcmes",
+              "sidebar": "solutions"
+            },
+            {
+              "id": "solutions/project",
+              "path": "/solutions/project",
+              "sidebar": "solutions"
             }
           ],
           "draftIds": [],
           "sidebars": {
-            "tutorialSidebar": {
+            "platform": {
               "link": {
-                "path": "/Project-Instructions/docs/intro",
-                "label": "intro"
+                "path": "/getting-started/",
+                "label": "getting-started/README"
+              }
+            },
+            "developer": {
+              "link": {
+                "path": "/developer",
+                "label": "developer"
+              }
+            },
+            "apps": {
+              "link": {
+                "path": "/apps/getting-started/overview",
+                "label": "apps/getting-started/overview"
+              }
+            },
+            "solutions": {
+              "link": {
+                "path": "/solutions/overview",
+                "label": "solutions/overview"
               }
             }
           }
         }
       ],
       "breadcrumbs": true
+    }
+  },
+  "docusaurus-plugin-google-gtag": {
+    "default": {
+      "trackingID": [
+        "G-XVSWFLK780"
+      ],
+      "anonymizeIP": true,
+      "id": "default"
     }
   }
 }
