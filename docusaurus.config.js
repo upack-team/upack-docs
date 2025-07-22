@@ -2,6 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 const { themes } = require('prism-react-renderer');
 
+// @ts-ignore
 const lightTheme = themes.github;
 const darkCodeTheme = themes.dracula;
 
@@ -20,8 +21,8 @@ const config = {
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'steedos', // Usually your GitHub org/user name.
-    projectName: 'steedos.github.io', // Usually your repo name.
+    organizationName: 'Project-Instructions', // Usually your GitHub org/user name.
+    projectName: 'upack-team.github.io', // Usually your repo name.
     // trailingSlash: true,
 
     onBrokenLinks: 'warn',
@@ -31,7 +32,7 @@ const config = {
     // metadata like html lang. For example, if your site is Chinese, you may want
     // to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'zh-CN', // ! 启动后默认是中文文档
         locales: ['en', 'zh-CN'],
     },
 
@@ -45,22 +46,14 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    routeBasePath: "/",
-                    // lastVersion: 'current',
-                    // versions: {
-                    //   current: {
-                    //     label: '2.5',
-                    //   },
-                    // },
-                    // Please change this to your repo.
-                    // Remove this to remove the "edit this page" links.
-                    editUrl: 'https://github.com/steedos/steedos-docs/tree/master/',
+                    sidebarPath: require.resolve('./sidebars.js'),  // ! 侧边
+                    routeBasePath: "/", 
+                    editUrl: 'https://github.com/upack-team/upack-docs/tree/main/',
                     editLocalizedFiles: true
                 },
                 theme: {
                     customCss: [
-                        require.resolve('./src/css/custom.css'),
+                        require.resolve('./src/css/custom.css'), // 英文文档时的 css 样式
                     ]
                 },
                 gtag: {
@@ -73,8 +66,10 @@ const config = {
 
     themes: [
         [
+            // @ts-ignore
             "@easyops-cn/docusaurus-search-local",
             /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+            // @ts-ignore
             ({
                 hashed: true,
                 language: ["en", "zh"],
@@ -95,29 +90,16 @@ const config = {
             defaultMode: 'light',
             disableSwitch: true,
             respectPrefersColorScheme: false,
-        },
-        // announcementBar: {
-        //   id: 'support_us',
-        //   content:
-        //     '⭐️ If you like Steedos, give a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/steedos/steedos-platform">GitHub</a>.',
-        //   backgroundColor: '#4D72DA',
-        //   textColor: '#ffffff',
-        //   isCloseable: true,
-        // },
+        }, 
         navbar: {
-            title: 'Steedos',
+            title: 'Upack',
             // style: 'dark',
-            logo: {
-                alt: 'Steedos',
-                src: 'img/logo.png',
-            },
-            items: [
-                // {
-                //     type: 'docSidebar',
-                //     position: 'left',
-                //     sidebarId: 'steedos-platform',
-                //     label: 'Platform',
-                // },
+            // logo: {
+            //     alt: 'Upack',
+            //     src: 'img/logo.png',
+            // },
+            items: [ 
+                // 左侧
                 {
                     type: 'docSidebar',
                     position: 'left',
@@ -136,10 +118,11 @@ const config = {
                     sidebarId: 'solutions',
                     label: 'Solutions',
                 },
+                // 右侧
                 {
                     type: 'search',
                     position: 'right',
-                },
+                },  
                 {
                     href: 'https://docs.steedos.com',
                     position: 'right',
@@ -149,17 +132,9 @@ const config = {
                     href: 'https://docs.steedos.cn',
                     position: 'right',
                     html: '中文',
-                },
-                // {
-                //   type: 'docsVersionDropdown',
-                //   position: 'right',
-                // },
-                // {
-                //   type: 'localeDropdown',
-                //   position: 'right',
-                // },
+                }, 
                 {
-                    href: 'https://github.com/steedos/steedos-platform',
+                    href: 'https://github.com/upack-team/upack-docs',
                     position: 'right',
                     className: 'navbar-social-link navbar-github-logo',
                     'aria-label': 'GitHub repository',
@@ -172,100 +147,7 @@ const config = {
                 hideable: false,
             }
         },
-        footer: {
-            // links: [{
-            //         title: 'Platform',
-            //         items: [{
-            //                 label: 'What is Steedos?',
-            //                 to: 'platform/overview',
-            //             },
-            //             {
-            //                 label: 'What is Lowcode?',
-            //                 to: 'platform/lowcode',
-            //             },
-            //             {
-            //                 label: 'Features',
-            //                 to: 'platform/features',
-            //             },
-            //             {
-            //                 label: 'Pricing',
-            //                 to: 'platform/pricing',
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         title: 'Solutions',
-            //         items: [{
-            //                 label: 'Project Management',
-            //                 to: 'solutions/project',
-            //             },
-            //             {
-            //                 label: 'Contract Management',
-            //                 to: 'solutions/contract',
-            //             },
-            //             {
-            //                 label: 'Expense Management',
-            //                 to: 'solutions/expense',
-            //             },
-            //             {
-            //                 label: 'Steedos AI',
-            //                 href: 'https://bots6.com',
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         title: 'Customer Success Stories',
-            //         items: [{
-            //                 label: 'Tsinghua University',
-            //                 to: 'customer-success-stories/tsinghua',
-            //             },
-            //             {
-            //                 label: 'CMB China',
-            //                 to: 'customer-success-stories/cmbchina-poc',
-            //             },
-            //             {
-            //                 label: 'Jianhua BM',
-            //                 to: 'customer-success-stories/jianhuabm',
-            //             },
-            //             {
-            //                 label: 'Shuang Hui',
-            //                 to: 'customer-success-stories/yz',
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         title: 'Resources',
-            //         items: [{
-            //                 label: 'Documentation',
-            //                 to: 'getting-started',
-            //             },
-            //             {
-            //                 label: 'Deploy',
-            //                 to: 'deploy',
-            //             },
-            //             {
-            //                 label: 'Developer',
-            //                 to: 'developer',
-            //             },
-            //         ],
-            //     },
-            //     {
-            //         title: 'Contact Us',
-            //         items: [{
-            //                 label: 'About Us',
-            //                 to: 'company/about-us',
-            //             },
-            //             {
-            //                 label: '400-820-1612 (China)',
-            //                 href: 'tel:400-820-1612',
-            //             },
-            //         ],
-            //     },
-            // ],
-            copyright: `
-            Copyright © ${new Date().getFullYear()} Steedos Inc.
-            `,
-        },
+        // footer: {   copyright: ` Copyright © ${new Date().getFullYear()} Upack Inc. ` },
         prism: {
             theme: darkCodeTheme,
             darkTheme: darkCodeTheme,

@@ -56,7 +56,7 @@ const sidebars = {
   // ],
   developer: [
     {
-      //getting started section start
+      // getting started section start
       type: 'category',
       label: 'Steedos Developer',
       collapsed: false,
