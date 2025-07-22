@@ -21,7 +21,7 @@
     "releasePatch": "standard-version --release-as patch",
     "push": "git push --follow-tags origin main",
     "commit_release_patch": "npm run commit && npm run releasePatch && npm run push",
-    "buildGhPages": "gh-pages -d build -b gh-pages"
+    "gh_page": "gh-pages -d build -b gh-pages"
   },
   "dependencies": {
     "@docusaurus/core": "^3.2.1",

@@ -72,7 +72,7 @@ const config = {
             // @ts-ignore
             ({
                 hashed: true,
-                language: ["en", "zh"],
+                // language: ["en", "zh"],
                 highlightSearchTermsOnTargetPage: true,
                 explicitSearchResultPath: true,
                 docsRouteBasePath: "/"
@@ -100,24 +100,24 @@ const config = {
             // },
             items: [ 
                 // 左侧
-                {
-                    type: 'docSidebar',
-                    position: 'left',
-                    sidebarId: 'platform',
-                    label: 'Docs',
-                },
-                {
-                    type: 'docSidebar',
-                    position: 'left',
-                    sidebarId: 'developer',
-                    label: 'Developer',
-                },
-                {
-                    type: 'docSidebar',
-                    position: 'left',
-                    sidebarId: 'solutions',
-                    label: 'Solutions',
-                },
+                // {
+                //     type: 'docSidebar',
+                //     position: 'left',
+                //     sidebarId: 'platform',
+                //     label: 'Docs',
+                // },
+                // {
+                //     type: 'docSidebar',
+                //     position: 'left',
+                //     sidebarId: 'developer',
+                //     label: 'Developer',
+                // },
+                // {
+                //     type: 'docSidebar',
+                //     position: 'left',
+                //     sidebarId: 'solutions',
+                //     label: 'Solutions',
+                // },
                 // 右侧
                 {
                     type: 'search',
