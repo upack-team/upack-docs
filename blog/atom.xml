@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.steedos.com/blog</id>
+    <title>Steedos Docs Blog</title>
+    <updated>2023-06-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.steedos.com/blog"/>
+    <subtitle>Steedos Docs Blog</subtitle>
+    <icon>https://docs.steedos.com/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to Steedos Platform]]></title>
+        <id>https://docs.steedos.com/blog/welcome</id>
+        <link href="https://docs.steedos.com/blog/welcome"/>
+        <updated>2023-06-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Steedos Low-code platform is an open-source alternative to Salesforce Platform. It provides a powerful and flexible platform for building enterprise applications quickly and easily. With Steedos, you can create custom applications without writing a single line of code.]]></summary>
+        <content type="html"><![CDATA[<p>Steedos Low-code platform is an open-source alternative to Salesforce Platform. It provides a powerful and flexible platform for building enterprise applications quickly and easily. With Steedos, you can create custom applications without writing a single line of code.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="core-features">Core Features<a href="https://docs.steedos.com/blog/welcome#core-features" class="hash-link" aria-label="Direct link to Core Features" title="Direct link to Core Features">​</a></h2>
+<ul>
+<li>Drag-and-drop interface for building applications</li>
+<li>Built-in data management and workflow automation</li>
+<li>Integration with popular business tools and services</li>
+<li>Customizable user interface and branding options</li>
+<li>Multi-language support</li>
+<li>Real-time collaboration and team management features</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-highlights">Key Highlights<a href="https://docs.steedos.com/blog/welcome#key-highlights" class="hash-link" aria-label="Direct link to Key Highlights" title="Direct link to Key Highlights">​</a></h2>
+<ul>
+<li>Low-code development: Steedos allows you to create custom applications without the need for extensive coding knowledge. This reduces development time and costs significantly.</li>
+<li>Open-source: Steedos is an open-source platform, which means you have complete control over the code and can modify it to fit your specific needs.</li>
+<li>Scalable: Steedos is built on a scalable architecture, which means it can grow with your business and handle large volumes of data and users.</li>
+<li>Secure: Steedos provides enterprise-level security features to ensure your data is protected at all times.</li>
+</ul>
+<p>Steedos Low-code platform is a powerful and flexible solution for building enterprise applications quickly and easily. With its low-code development approach, open-source nature, and scalable architecture, it is an ideal choice for businesses looking to streamline their application development process.</p>]]></content>
+    </entry>
+</feed>
