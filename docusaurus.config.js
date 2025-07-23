@@ -18,6 +18,8 @@ const config = {
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
+    // baseUrl: '/upack-docs/',
+    
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
@@ -100,24 +102,24 @@ const config = {
             // },
             items: [ 
                 // 左侧
-                // {
-                //     type: 'docSidebar',
-                //     position: 'left',
-                //     sidebarId: 'platform',
-                //     label: 'Docs',
-                // },
-                // {
-                //     type: 'docSidebar',
-                //     position: 'left',
-                //     sidebarId: 'developer',
-                //     label: 'Developer',
-                // },
-                // {
-                //     type: 'docSidebar',
-                //     position: 'left',
-                //     sidebarId: 'solutions',
-                //     label: 'Solutions',
-                // },
+                {
+                    type: 'docSidebar',
+                    position: 'left',
+                    sidebarId: 'platform',
+                    label: 'Docs',
+                },
+                {
+                    type: 'docSidebar',
+                    position: 'left',
+                    sidebarId: 'developer',
+                    label: 'Developer',
+                },
+                {
+                    type: 'docSidebar',
+                    position: 'left',
+                    sidebarId: 'solutions',
+                    label: 'Solutions',
+                },
                 // 右侧
                 {
                     type: 'search',

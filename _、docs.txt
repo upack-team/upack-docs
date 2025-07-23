@@ -4,3 +4,17 @@
 build size 171MB
 
 build size 78MB
+build size 83MB
+
+
+
+
+
+提交build目录到gh-pages分支
+cd build
+git init
+git remote add origin https://github.com/upack-team/upack-docs.git
+git checkout -b gh-pages
+git add .
+git commit -m "deploy"
+git push -f origin gh-pages
