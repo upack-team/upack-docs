@@ -18,3 +18,7 @@ git checkout -b gh-pages
 git add .
 git commit -m "deploy"
 git push -f origin gh-pages
+
+
+
+openapi/records.yaml 生成了 index.html模板
