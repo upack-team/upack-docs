@@ -1,4 +1,3 @@
-// @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 const { themes } = require('prism-react-renderer');
 
@@ -48,7 +47,7 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),  // ! 侧边
+                    sidebarPath: require.resolve('./docusaurus.sidebars.js'),  // ! 侧边
                     routeBasePath: "/", 
                     editUrl: 'https://github.com/upack-team/upack-docs/tree/main/',
                     editLocalizedFiles: true
@@ -108,18 +107,18 @@ const config = {
                     sidebarId: 'platform',
                     label: 'Docs',
                 },
-                {
-                    type: 'docSidebar',
-                    position: 'left',
-                    sidebarId: 'developer',
-                    label: 'Developer',
-                },
-                {
-                    type: 'docSidebar',
-                    position: 'left',
-                    sidebarId: 'solutions',
-                    label: 'Solutions',
-                },
+                // {
+                //     type: 'docSidebar',
+                //     position: 'left',
+                //     sidebarId: 'developer',
+                //     label: 'Developer',
+                // },
+                // {
+                //     type: 'docSidebar',
+                //     position: 'left',
+                //     sidebarId: 'solutions',
+                //     label: 'Solutions',
+                // },
                 // 右侧
                 {
                     type: 'search',

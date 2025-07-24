@@ -21,4 +21,6 @@ git push -f origin gh-pages
 
 
 
+
+Redocly CLI 是一个用于管理和优化 OpenAPI 文档的命令行工具。
 openapi/records.yaml 生成了 index.html模板
