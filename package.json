@@ -23,6 +23,9 @@
     "commit_release_patch": "npm run commit && npm run releasePatch && npm run push",
     "gh_page": "gh-pages -d build -b gh-pages"
   },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@docusaurus/core": "^3.2.1",
     "@docusaurus/plugin-google-gtag": "^3.2.1",
@@ -60,8 +63,5 @@
       "last 3 firefox version",
       "last 5 safari version"
     ]
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
